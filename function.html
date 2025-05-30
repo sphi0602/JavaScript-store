@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Corrected heading with id and single onclick -->
+        <h1 id="heading" onclick="changeText()">JavaScript</h1>
+        <p id="addition"></p>
+
+        <script>
+                document.getElementById("addition").innerHTML=addNumbers(10, 20);
+            function changeText() {
+                var heading = document.getElementById("heading");
+                if (heading.innerHTML === 'JavaScript') {
+                    heading.innerHTML = 'Is awesome';
+                } else {
+                    heading.innerHTML = 'JavaScript';
+                }
+            }
+
+            function addNumbers(num1, num2){
+                return num1 + num2;
+            }
+        </script>
+    </body>
+</html>
